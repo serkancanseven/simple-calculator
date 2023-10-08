@@ -1,2 +1,2 @@
-# simple-calculator
-Simple Calculator
+- A simple calculator implementation
+- Written with vanilla HTML/CSS/JS

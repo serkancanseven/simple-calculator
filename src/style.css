@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-size: 38px;
+  font-family: "Rubik", sans-serif;
+  background-color: #a2b0bc;
+  color: #e2e5e7;
+}
+
+.container {
+  margin: auto;
+  max-width: 480px;
+}
+
+.device {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #35495c;
+  border-radius: 16px;
+}
+
+#display {
+  height: 120px;
+  max-width: 440px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 0;
+  padding: 20px;
+  background-color: #89c763;
+  box-shadow: inset 5px 5px rgba(0, 100, 0, 0.3);
+  border-radius: 12px;
+  font-size: 64px;
+  color: #0b7438;
+  overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.buttons > div {
+  width: 95px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #648dac;
+  margin: 10px;
+  border-right: solid 5px rgba(0, 0, 0, 0.2);
+  border-bottom: solid 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 5px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.buttons > div:hover {
+  cursor: pointer;
+}
+
+.buttons > div:active {
+  cursor: pointer;
+  border-right: solid 5px rgba(255, 255, 255, 0.2);
+  border-bottom: solid 5px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttons > .divide,
+.buttons > .multiply,
+.buttons > .subtract,
+.buttons > .add {
+  background-color: #f1af1f;
+}
+
+.buttons > .clear {
+  background-color: #f1501f;
+}
+
+.buttons > .equals {
+  background-color: #1f7af1;
+}
